@@ -8,7 +8,6 @@ classes: wide
 categories:
   - Jekyll
   - Tutorial
-  - Template
 tags:
   - Jekyll
   - Docker
@@ -18,7 +17,7 @@ tags:
 
 
 [Docker](https://docs.docker.com/get-docker/)
-<img src="/assets/images/jekyll-docker/project-banner.png">
+<img src="/images/jekyll-docker/project-banner.png">
 
 
 
