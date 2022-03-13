@@ -1,0 +1,46 @@
+---
+layout: Default
+---
+<aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="about-image">
+        <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.user.image %}{{site.user.image}}{% endif %}" alt="{{site.user.name}}"></a>
+      </div>
+      <div class="about-name">{{site.user.name}}</div>
+      <p>{{site.user.about}}</p>
+    </div>
+  </header>
+  <footer>
+    <section class="social">
+      <ul>
+        {% if site.user.social.twitter %}
+          <li><a href="https://twitter.com/{{ site.user.social.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.user.social.facebook %}
+          <li><a href="https://facebook.com/{{ site.user.social.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.user.social.github %}
+          <li class="github"><a href="http://github.com/{{site.user.social.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+        {% endif %}
+        {% if site.user.social.linkedin %}
+          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.user.social.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        {% endif %}
+        {% if site.user.social.email %}
+          <li class="email"><a href="mailto:{{site.user.social.email}}"><i class="fa fa-envelope-o"></i></a></li>
+        {% endif %}
+      </ul>
+    </section>
+    <div class="copyright">
+      <p>{{site.time | date: '%Y'}} &copy; {{site.user.name}}</p>
+    </div>
+  </footer>
+</aside>
+<div class="content-header">
+  {%- include Header.html -%}
+</div>
+<div class="content-box clearfix">
+  {{ content }}
+</div>
+{%- include ContextMenu.html -%}
+{%- include BackToTop.html -%}
