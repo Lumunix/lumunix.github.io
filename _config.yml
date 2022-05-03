@@ -19,9 +19,9 @@
 #######################################################################
 remote_theme: Lumunix/Domain
 skin: light #Light(Default), Dark
-baseurl: "/Domain-Github-Pages-Initializer" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://lumunix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "Lumunix/Domain-Github-Pages-Initializer" # GitHub username/repo-name
+repository: "Lumunix/lumunix.github.io" # GitHub username/repo-name
 analytics: G-XFXH3N63NV # Google Analytics
 timezone: America/New_York
 include:
