@@ -17,19 +17,42 @@
 #######################################################################
 # Site settings
 #######################################################################
-
+remote_theme: Lumunix/Domain
 skin: light #Light(Default), Dark
-baseurl: "/Domain" # the subpath of your site, e.g. /blog
+baseurl: "/Domain-Github-Pages-Initializer" # the subpath of your site, e.g. /blog
 url: "https://lumunix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "lumunix/Domain" # GitHub username/repo-name
+repository: "Lumunix/Domain-Github-Pages-Initializer" # GitHub username/repo-name
 analytics: G-XFXH3N63NV # Google Analytics
+timezone: America/New_York
+include:
+  - _pages
 #######################################################################
-# User Settings
+# SEO settings
+# Jekyll-SEO-Tag https://github.com/Lumunix/jekyll-seo-tag/blob/master/docs/usage.md
 #######################################################################
-user:
+logo: /assets/img/Icon.png
+tagline: Personal knowledge repository and blog template.
+description:  Domain - a specified sphere of activity or knowledge, your personal knowledge repository and blog.
+author:
   name: Lumunix
-  image: Icon.png
-  about: Hello I'm Lumunix. I am a software engineer that specializes in automation.
+  twitter: lumunix
+  image: /assets/img/Icon.png
+twitter:
+  card: summary_large_image
+  username: Lumunix
+social:
+  name: Lumunix
+  links:
+    - https://twitter.com/lumunix
+    - https://github.com/lumunix
+#######################################################################
+# Sidebar Settings
+#######################################################################
+sidebar:
+  title: Lumunix
+  image: /assets/img/Icon.png
+  bio: Hello I'm Lumunix. I am a software engineer that specializes in automation.
+  copyright: Lumunix
   social:
     twitter: Lumunix
     github: Lumunix
@@ -40,7 +63,22 @@ user:
     instagram: lum_unix
     email: lumunix@icloud.com
 
-
+#######################################################################
+# About Page
+#######################################################################
+about:
+  name: Lumunix
+  image: /assets/img/type.png
+  bio: Hello I'm Lumunix. I am a software engineer that specializes in automation.
+  social:
+    twitter: Lumunix
+    github: Lumunix
+    youtube: Lumunix
+    linkedin: blah
+    twitch: lumunix
+    facebook: blah
+    instagram: lum_unix
+    email: lumunix@icloud.com
 
 #####################################################################
 # Site Feature Settings
@@ -84,19 +122,30 @@ preferences:
       enabled: true
   flashcards:
     enabled: true
-  reCaptcha:
-    # Using a google account create a reCaptcha at https://www.google.com/recaptcha/admin
-    enabled: true
-    siteKey: 6LeLYEYaAAAAAFGdotkfMHnCB3iA1hFY1dJmcoSy
-    secret: KMFMK/JphRpu1sXpWls+8HlOsAHT/YV+U4qylPp+mkz4St1WStQGj2ccaJunnpcv3yXAfTh/utP4P9Wa+HuV7xqzkh5BWbYMeZjx9FNC5iVYSsq9QME3/cZnWL3TEDFkYpjBLC2VDmz81cepo3zSdMrGhSgmql6IYoQzgkFa17M=
-  comments:
-    system: staticman #false (default), "disqus", "staticman"
-    disqus:
-      shortname: lumunix # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-    staticman:
-      #See additional options in staticman.yml
-      branch: "main" # "main"
-      staticman_url: "https://api.staticman.net/v3/entry/github/lumunix/Domain/main/comments"
+  utterances:
+    repo: Lumunix/Domain
+    issue-term: pathname
+    theme: github-light
+    crossorigin: anonymous
+
+#####################################################################
+# Post Authors
+#####################################################################
+
+authors:
+  lumunix:
+    name: Lumunix
+    image: /assets/img/Icon.png
+    bio: Hello I'm Lumunix. I'm a software engineer that specializes in automation. I love to learn about new and creative ways to get computers to do my bidding, the world is filled with problems waiting to be solved!
+    social:
+      twitter: Lumunix
+      github: Lumunix
+      youtube: Lumunix
+      linkedin: blah
+      twitch: lumunix
+      facebook: blah
+      instagram: lum_unix
+      email: lumunix@icloud.com
 
 #####################################################################
 # Build Settings
@@ -106,8 +155,8 @@ encoding: utf-8
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-tidy
   - jekyll-paginate
+  - jekyll-seo-tag
 
 markdown: kramdown
 paginate: 6
@@ -130,26 +179,11 @@ defaults:
       layout: Post
       permalink: /posts/:title
       content-type: post
-
-#####################################################################
-# Post Authors
-#####################################################################
-
-authors:
-  lumunix:
-    name: Lumunix
-    image: Icon.png
-    about: Hello I'm Lumunix. I'm a software engineer that specializes in automation. I love to learn about new and creative ways to get computers to do my bidding, the world is filled with problems waiting to be solved!
-    social:
-      twitter: Lumunix
-      github: Lumunix
-      youtube: Lumunix
-      linkedin: blah
-      twitch: lumunix
-      facebook: blah
-      instagram: lum_unix
-      email: lumunix@icloud.com
-
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: Page
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

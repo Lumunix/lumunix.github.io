@@ -1,9 +1,12 @@
 ---
 layout: Post
 title: Welcome To Domain
+description: Introducing the Domain theme features.
 author: lumunix
 date: 2022-01-02
-thumbnail: welcome-to-domain.png
+thumbnail: /assets/img/welcome-to-domain.png
+image: /assets/img/welcome-to-domain.png
+header: /assets/img/banner.png
 tags: [Welcome, Documentation]
 comments: false
 ---
@@ -51,7 +54,7 @@ Theme features include:
   >
   > **Rendered Text:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. [[Donec rutrum tortor in pharetra vehicula::srs]]. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.
 
-- **Comment Systems**: Multiple comment systems available, please see the [[Comment Systems]] post for additional documentation.
+- **Comment System**: [[To see comment systems available, please see the [[Comment Systems]] post for additional documentation.]]
 
 - **RSS Feed**: Allows users to keep up to date with your posts!
 
