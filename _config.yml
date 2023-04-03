@@ -151,12 +151,25 @@ authors:
 # Build Settings
 # plugins, markdown,
 #####################################################################
+collections:
+  - tutorials
+
+collections_dir: collections
+collections:
+  tutorials:
+    output: true
+    permalink: /:collection/:path/
+
 encoding: utf-8
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+
+jekyll_admin:
+  hidden_links:
+    - datafiles
 
 markdown: kramdown
 paginate: 6
@@ -166,7 +179,7 @@ kramdown:
   input: GFM
   hard_wrap: false
   smart_quotes: ["apos", "apos", "quot", "quot"]
-  syntax_highlighter: rouge
+
 
 sass:
   style: compressed
