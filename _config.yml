@@ -17,6 +17,7 @@
 #######################################################################
 # Site settings
 #######################################################################
+title: Lumunix
 remote_theme: Lumunix/Domain
 skin: light #Light(Default), Dark
 baseurl: "/" # the subpath of your site, e.g. /blog
