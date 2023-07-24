@@ -1,15 +1,32 @@
 ---
 layout: Post
-title: Being a Tmate: Sharing a Terminal Session
+title: Being a Tmate - Sharing a Terminal Session
 description: How to share your terminal session with mac users.
 author: lumunix
-date: 2022-05-26
+date: 2023-07-20
 thumbnail: /assets/img/codesections.png
 image: /assets/img/codesections.png
 header: /assets/img/banner.png
 tags: [Terminal,Collaboration,Tools, Pair Programming]
-comments: false
+comments: true
 ---
+
+{:toc}
+## What is Tmate ?
+>      tmate provides an instant pairing solution, allowing you to share a terminal with one or
+     several teammates. Together with a voice call, it's almost like pairing in person. The
+     terminal sharing works by using SSH connections to backend servers maintained by tmate
+     upstream developers; teammates need to be given a randomly-generated token to be able to
+     join a session.
+
+### Use Cases
+- Handle packaging and versioning
+- Manage virtual environments creation
+- Install and manage dependencies and versions for your project
+- Centralize project configuration and management
+- Publishing python packages
+
+
 
 # Being a Tmate: Sharing a Terminal Session
 <img src="{{site.baseurl}}/assets/img/computer.png">

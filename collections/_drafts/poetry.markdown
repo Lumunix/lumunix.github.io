@@ -1,14 +1,14 @@
 ---
 layout: Post
-title: Being a Tmate - Sharing a Terminal Session
-description: How to share your terminal session with mac users.
+title: Pure Poetry, Using Poetry with your Python Project
+description: How to utilize Poetry to manage your python project.
 author: lumunix
-date: 2022-05-26
+date: 2023-07-20
 thumbnail: /assets/img/codesections.png
 image: /assets/img/codesections.png
 header: /assets/img/banner.png
-tags: [Terminal,Collaboration,Tools, Pair Programming]
-comments: false
+tags: [Python,Tools, Packaging]
+comments: true
 ---
 
 So you start on a python project, you open your IDE and say your starting from a existing framework or generated template, you are probably familiar with the following pip install command:
