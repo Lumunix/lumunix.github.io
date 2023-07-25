@@ -11,9 +11,11 @@ tags: [Terminal,Collaboration,Tools, Pair Programming]
 comments: true
 ---
 
+During the pandemic I'm sure many of developers got their first hand taste of using remote desktop software such as [[Teamviewer::https://www.teamviewer.com/en-us/]], [[Zoom::https://zoom.us]], [[Microsoft Teams::https://www.microsoft.com/en-us/microsoft-teams/group-chat-software]] to diagnose problems on another coworkers machine. These pieces of software allow you to share your entire desktop or particular screen. This is fine for full IDEs where you can control font sizes and can easily adjust scale so that your teammates can see your work. What do you do if you need to share just your terminal or need to quickly help another developer by checking a few commands to diagnose a problem or if they are not comfortable executing the commands? Say you need some logs from a particular machine, or just want to check the ip address of their machine without coaching them through the commands? During the pandemic I ran into this problem all the time where I just needed to run a few commands to unstick a developer, however trial and error through dedicated messaging on slack is tedious and time consuming. Wouldn't it be better to just grab the developers laptop and do it yourself?
+
 {:toc}
 ## What is Tmate ?
->      tmate provides an instant pairing solution, allowing you to share a terminal with one or
+>   tmate provides an instant pairing solution, allowing you to share a terminal with one or
      several teammates. Together with a voice call, it's almost like pairing in person. The
      terminal sharing works by using SSH connections to backend servers maintained by tmate
      upstream developers; teammates need to be given a randomly-generated token to be able to
@@ -31,7 +33,7 @@ comments: true
 # Being a Tmate: Sharing a Terminal Session
 <img src="{{site.baseurl}}/assets/img/computer.png">
 
-During the pandemic I'm sure many of developers got their first hand taste of using remote desktop software such as [[Teamviewer::https://www.teamviewer.com/en-us/]], [[Zoom::https://zoom.us]], [[Microsoft Teams::https://www.microsoft.com/en-us/microsoft-teams/group-chat-software]] to diagnose problems on another coworkers machine. These pieces of software allow you to share your entire desktop or particular screen. This is fine for full IDEs where you can control font sizes and can easily adjust scale so that your teammates can see your work. What do you do if you need to share just your terminal or need to quickly help another developer by checking a few commands to diagnose a problem or if they are not comfortable executing the commands? Say you need some logs from a particular machine, or just want to check the ip address of their machine without coaching them through the commands? During the pandemic I ran into this problem all the time where I just needed to run a few commands to unstick a developer, however trial and error through dedicated messaging on slack is tedious and time consuming. Wouldn't it be better to just grab the developers laptop and do it yourself?
+
 
 This is where a tool called [[Tmate::https://tmate.io]] comes in. Tmate allows you to share your terminal over the web by establishing a ssh session to [[Tmate.io::https://tmate.io]] and generating a url id, this id can then be shared with other developers and they can view and interact with your terminal session.
 

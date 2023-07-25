@@ -3,12 +3,12 @@ layout: Post
 title: Homebrew, The Missing MacOS Package Manager.
 description: Using the Homebrew package manager to install software and dependencies.
 author: lumunix
-date: 2022-05-26
+date: 2023-07-20
 thumbnail: /assets/img/codesections.png
 image: /assets/img/codesections.png
 header: /assets/img/banner.png
-tags: [Package Manager,Tools,cli]
-comments: false
+tags: [Package Manager,Tools,CLI]
+comments: true
 ---
 
 
