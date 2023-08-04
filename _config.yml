@@ -57,11 +57,11 @@ sidebar:
   social:
     twitter: Lumunix
     github: Lumunix
-    youtube: Lumunix
-    linkedin: blah
-    twitch: lumunix
-    facebook: blah
-    instagram: lum_unix
+    #youtube: Lumunix
+    #linkedin: blah
+    #twitch: lumunix
+    #facebook: blah
+    #instagram: lum_unix
     email: lumunix@icloud.com
 
 #######################################################################
@@ -74,11 +74,11 @@ about:
   social:
     twitter: Lumunix
     github: Lumunix
-    youtube: Lumunix
-    linkedin: blah
+    #youtube: Lumunix
+    #linkedin: blah
     twitch: lumunix
-    facebook: blah
-    instagram: lum_unix
+    #facebook: blah
+    #instagram: lum_unix
     email: lumunix@icloud.com
 
 #####################################################################
@@ -86,7 +86,7 @@ about:
 #####################################################################
 preferences:
   author:
-    enabled: true
+    enabled: false
   search:
     enabled: true
   wiki_style_link: # This property handles wiki style links '[['
@@ -124,7 +124,7 @@ preferences:
   flashcards:
     enabled: true
   utterances:
-    repo: Lumunix/Domain
+    repo: Lumunix/lumunix.github.io
     issue-term: pathname
     theme: github-light
     crossorigin: anonymous
@@ -141,11 +141,11 @@ authors:
     social:
       twitter: Lumunix
       github: Lumunix
-      youtube: Lumunix
-      linkedin: blah
-      twitch: lumunix
-      facebook: blah
-      instagram: lum_unix
+      #youtube: Lumunix
+      #linkedin: blah
+      #twitch: lumunix
+      #facebook: blah
+      #instagram: lum_unix
       email: lumunix@icloud.com
 
 #####################################################################
